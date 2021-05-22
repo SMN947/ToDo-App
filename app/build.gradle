@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 29
     buildToolsVersion "21.1.0"
 
     defaultConfig {
         applicationId "com.smn947.todofree"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -21,4 +21,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+	implementation 'com.squareup.okhttp3:okhttp:4.3.1'
+	
 }
